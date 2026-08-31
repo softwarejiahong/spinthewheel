@@ -6,6 +6,7 @@ import {
   type ChangeEvent,
   type CSSProperties,
 } from "react";
+import maBackgroundURL from "/ma-background.jpg";
 
 type PaletteName = "event" | "classic";
 
@@ -172,7 +173,7 @@ export default function App() {
       className={`app-shell palette-${palette}`}
       style={
         {
-          "--event-background": `url(${background ?? "/ma-background.jpg"})`,
+          "--event-background": `url(${background ?? maBackgroundURL})`,
         } as CSSProperties
       }
     >
